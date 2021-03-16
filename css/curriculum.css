@@ -40,6 +40,7 @@ html, body{
 nav{
     margin: 6rem;
     margin-top: 2rem;
+    margin-bottom: 1rem;
     border-radius: 10px;
     padding: 1rem;
     border: 2px solid #89023E;
@@ -96,3 +97,11 @@ aside{
     }
 }
 
+a{
+    margin-bottom: 100px;
+    margin-left: 45%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+}
