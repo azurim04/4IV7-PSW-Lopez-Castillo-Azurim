@@ -1,0 +1,98 @@
+:root{
+    --container-bg-color: #77bd89;
+    --article-color: #2629ac;
+    --red: #e74c3c;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+br{
+    clear: right;
+}
+
+ul{
+    list-style-position: inside;
+    list-style-type: disc 20px;
+    display: inline-table;
+    margin: 1rem;
+    padding: 1rem;
+    margin-left: 30px;
+    font-size: 17px;
+    font-family: Courier;
+    background-color: #FFD9DA;
+    color: black;
+    border: 3px solid black;
+}
+
+html, body{
+    background-image: url(https://p2.piqsels.com/preview/278/298/325/mirroring-water-blue-green.jpg);
+}
+
+.main-container{
+    border: 4px;
+    border-radius: 10px;
+    margin: 2rem;
+}
+
+nav{
+    margin: 6rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+    padding: 1rem;
+    border: 2px solid #89023E;
+    background-color: #CC7178;
+    width: 85%;
+    padding-bottom: 4rem;
+}
+
+img{
+    margin: 1rem;
+    margin-left: 30px;
+    margin-right: 42px;
+    float: left;
+    border: 3px solid black;
+}
+
+header{
+    padding: 0.5rem;
+    margin: 1rem;
+    margin-left: 30px;
+    width: 93.5%;
+    font-size: 20px;
+    height: max-content;
+    background-color: #89023E;
+    color: whitesmoke;
+    font-family: Lucida;
+    text-align: center;
+    display: inline-block;
+    animation-name: animacion_test;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+article{
+    margin-top: 80px;
+    display: block;
+}
+aside{
+    float: right;
+    overflow: hidden;
+    padding-right: 10px;
+    width: 40%;
+    margin-top: 0.4px;
+    margin-right: 50px;
+    align-items: right;
+}
+
+@keyframes animacion_test{
+    from{
+        background-color: #89023E;
+    }
+    to{
+        background-color: #77bd89;
+    }
+}
+
