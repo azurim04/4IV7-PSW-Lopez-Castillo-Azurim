@@ -12,7 +12,7 @@
 
     <P>
         Se desea programar un formulario el cual sea capaz
-        de calcular el interes al 2% mesualo sobre un capital
+        de calcular el interes al 2% mensual sobre un capital
         a invertir.
     </P>
 
@@ -21,12 +21,12 @@
             <tr>
                 <td class="td_up">Introduce la cantidad a invertir</td>
                 <td class="td_down"><input type="text" name="cantidad"
-                    onkeypress=""></td>
+                    onkeypress="return validar(event)"></td>
             </tr>
             <tr>
                 <td></td>
                 <td class="td_down"><input type="button" value="Interes"
-                    name="enviar" onclick=""></td>
+                    name="enviar" onclick="interes()"></td>
             </tr>
             <tr>
                 <td class="td_up">Su saldo total con interes del 2% mensual es de:</td>
@@ -36,11 +36,13 @@
             </tr>
             <tr>
                 <td></td>
-                <td class="td_down"><input type="button" name="borrar"
-                    value="borrar" onclick=""></td>
+                <td class="td_down"><input type="button" name="Borrar"
+                    value="borrar" onclick="borrar()"></td>
             </tr>
         </table>
     </form>
+    <br>
+    <a href="formulario.html">Regresar a Formulario</a>
     
 </body>
 </html>
