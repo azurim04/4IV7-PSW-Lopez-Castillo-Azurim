@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 10</title>
+    <link rel="stylesheet" href="./css/problema.css">
+    <script src="./js/problema10.js"></script>
+</head>
+<body>
+    <div class="main-container">
+        <nav>
+            <section id="parrafo">
+                <p>
+                    Calcular la utilidad que un trabajador recibe en el reparto anual de 
+                    utilidades si este se le asigna como un porcentaje de su salario que
+                    depende de su antiguedad en la empresa de acuerdo con la sig tabla:
+                    <table id="t1" align="center" border="1">
+                        <tr>
+                            <td>
+                                Tiempo
+                                <ul>
+                                <li>Menos de 1 año</li>
+                                <li>1 año o mas y menos de 2 años</li> 
+                                <li>2 años o mas y menos de 5 años</li>
+                                <li>5 años o mas y menos de 10 años</li>
+                                <li>10 años o mas</li>
+                                </ul>
+                            </td>
+                            <td>
+                                Utilidad
+                                <ul>
+                                <li>5% del salario</li>
+                                <li>7% del salario</li> 
+                                <li>10% del salario</li>
+                                <li>15% del salario</li>
+                                <li>20% del salario</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </p>
+            </section>
+            <section id="formulario">
+                <form name="formulario" method="get" action="problema10.html">
+                    <table align="center" border="1";>
+                        <tr>
+                            <td class="td_up">Introduce el tiempo que llevas trabajando en la empresa:</td>
+                            <td class="td_down"><input type="text" name="tiempo"
+                                onkeypress="return validar(event)"></td>
+                        </tr>
+                        <tr>
+                            <td class="td_up">Introduce tu salario:</td>
+                            <td class="td_down"><input type="text" name="salario"
+                                onkeypress="return validar(event)"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="td_down"><input type="button" value="Calcular"
+                                name="enviar" onclick="cal()"></td>
+                        </tr>
+                        <tr>
+                            <td class="td_up">La utilidad que recibira este año es de:</td>
+                            <td class="td_down"><input type="text" name="utilidad"
+                                id="utilidaadti" readonly="readonly"
+                                class="input_text"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="td_down"><input type="button" name="Borrar"
+                                value="borrar" onclick="borrar()"></td>
+                        </tr>
+                    </table>
+                </form>
+            </section>
+        </nav>
+        <br>
+        <a href="MenuProblemas.html">Regresar a Menu</a>
+        <footer>PROBLEMAS DE JAVA SCRIPT</footer>
+    </div>
+</body>
+</html>
