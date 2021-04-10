@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 05</title>
+    <link rel="stylesheet" href="./css/problema.css">
+    <script src="./js/problema05.js"></script>
+</head>
+<body>
+    <div class="main-container">
+        <nav>
+            <section id="parrafo">
+                <p>
+                    Un maestro desea saber que porcentaje de hombres y que porcentaje
+                    de mujeres hay en un grupo de estudiantes
+                </p>
+            </section>
+            <section id="formulario">
+                <form name="formulario" method="get" action="problema05.html">
+                    <table align="center" border="1";>
+                        <tr>
+                            <td class="td_up">Introduce la cantidad de alumnos en el grupo:</td>
+                            <td class="td_down"><input type="text" name="alumnos"
+                                onkeypress="return validar(event)"></td>
+                        </tr>
+                        <tr>
+                            <td class="td_up">Introduce la cantidad de niñas en el grupo:</td>
+                            <td class="td_down"><input type="text" name="niñas"
+                                onkeypress="return validar(event)"></td>
+                        </tr>
+                        <tr>
+                            <td class="td_up">Introduce la cantidad de niños en el grupo:</td>
+                            <td class="td_down"><input type="text" name="niños"
+                                onkeypress="return validar(event)"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="td_down"><input type="button" value="Calcular"
+                                name="enviar" onclick="cal()"></td>
+                        </tr>
+                        <tr>
+                            <td class="td_up">El porcentaje de niñas en el grupo es de:</td>
+                            <td class="td_down"><input type="text" name="niñasti"
+                                id="cniñas" readonly="readonly"
+                                class="input_text"></td>
+                        </tr>
+                        <tr>
+                            <td class="td_up">El porcentaje de niños en el grupo es de:</td>
+                            <td class="td_down"><input type="text" name="niñosti"
+                                id="cniños" readonly="readonly"
+                                class="input_text"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="td_down"><input type="button" name="Borrar"
+                                value="borrar" onclick="borrar()"></td>
+                        </tr>
+                    </table>
+                </form>
+            </section>
+        </nav>
+        <br>
+        <a href="MenuProblemas.html">Regresar a Menu</a>
+        <footer>PROBLEMAS DE JAVA SCRIPT</footer>
+    </div>
+</body>
+</html>
