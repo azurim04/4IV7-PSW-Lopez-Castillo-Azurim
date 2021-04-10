@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 04</title>
+    <link rel="stylesheet" href="./css/problema.css">
+    <script src="./js/problema04.js"></script>
+</head>
+<body>
+    <div class="main-container">
+        <nav>
+            <section id="parrafo">
+                <p>
+                    Un alumno desea saber cual sera se calificacion final
+                    en la materia de Algoritmos. Dicha calificacion se compone
+                    de los siguientes porcentajes:
+                    55% del promedio de sus tres calificaciones parciales
+                    30% de la calificacion del examen final
+                    15% de la calificacion de un trabajo final
+                </p>
+            </section>
+            <section id="formulario">
+                <form name="formulario" method="get" action="problema01.html">
+                    <table align="center" border="1";>
+                        <tr>
+                            <td class="td_up">Introduce tu calificacion del primer parcial:</td>
+                            <td class="td_down"><input type="text" name="parcial1"
+                                onkeypress="return validar(event)"></td>
+                        </tr>
+                        <tr>
+                            <td class="td_up">Introduce tu calificacion del segundo parcial:</td>
+                            <td class="td_down"><input type="text" name="parcial2"
+                                onkeypress="return validar(event)"></td>
+                        </tr>
+                        <tr>
+                            <td class="td_up">Introduce tu calificacion del tercer parcial:</td>
+                            <td class="td_down"><input type="text" name="parcial3"
+                                onkeypress="return validar(event)"></td>
+                        </tr>
+                        <tr>
+                            <td class="td_up">Introduce tu calificacion del examen final:</td>
+                            <td class="td_down"><input type="text" name="examen"
+                                onkeypress="return validar(event)"></td>
+                        </tr>
+                        <tr>
+                            <td class="td_up">Introduce tu calificacion del trabajo final:</td>
+                            <td class="td_down"><input type="text" name="trabajo"
+                                onkeypress="return validar(event)"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="td_down"><input type="button" value="Calcular Calificacion"
+                                name="enviar" onclick="calcular()"></td>
+                        </tr>
+                        <tr>
+                            <td class="td_up">Tu calificacion final en Algoritmos es de:</td>
+                            <td class="td_down"><input type="text" name="final"
+                                id="calfin" readonly="readonly"
+                                class="input_text"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="td_down"><input type="button" name="Borrar"
+                                value="borrar" onclick="borrar()"></td>
+                        </tr>
+                    </table>
+                </form>
+            </section>
+        </nav>
+        <br>
+        <a href="MenuProblemas.html">Regresar a Menu</a>
+        <footer>PROBLEMAS DE JAVA SCRIPT</footer>
+    </div>
+</body>
+</html>
