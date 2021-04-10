@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 06</title>
+    <link rel="stylesheet" href="./css/problema.css">
+    <script src="./js/problema06.js"></script>
+</head>
+<body>
+    <div class="main-container">
+        <nav>
+            <section id="parrafo">
+                <p>
+                    Realizar un algoritmo que calcule la edad de una persona
+                </p>
+            </section>
+            <section id="formulario">
+                <form name="formulario" method="get" action="problema06.html">
+                    <table align="center" border="1";>
+                        <tr>
+                            <td class="td_up">Introduzca su año de nacimiento:</td>
+                            <td class="td_down"><input type="text" name="año"
+                                onkeypress="return validar(event)"></td>
+                        </tr>
+                        <tr>
+                            <td class="td_up">Introduzca su mes de nacimiento:</td>
+                            <td class="td_down"><input type="text" name="mes"
+                                onkeypress="return validar(event)"></td>
+                        </tr>
+                        <tr>
+                            <td class="td_up">Introduzca su día de nacimiento:</td>
+                            <td class="td_down"><input type="text" name="dia"
+                                onkeypress="return validar(event)"></td>
+                        </tr>
+                        <tr>
+                            <td class="td_up">Introduzca el año actual:</td>
+                            <td class="td_down"><input type="text" name="añoact"
+                                onkeypress="return validar(event)"></td>
+                        </tr>
+                        <tr>
+                            <td class="td_up">Introduzca el mes actual:</td>
+                            <td class="td_down"><input type="text" name="mesact"
+                                onkeypress="return validar(event)"></td>
+                        </tr>
+                        <tr>
+                            <td class="td_up">Introduzca el día de hoy:</td>
+                            <td class="td_down"><input type="text" name="diaact"
+                                onkeypress="return validar(event)"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="td_down"><input type="button" value="Calcular Edad"
+                                name="enviar" onclick="caledad()"></td>
+                        </tr>
+                        <tr>
+                            <td class="td_up">Su edad actual es de:</td>
+                            <td class="td_down"><input type="text" name="edad"
+                                id="edadact" readonly="readonly"
+                                class="input_text"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="td_down"><input type="button" name="Borrar"
+                                value="borrar" onclick="borrar()"></td>
+                        </tr>
+                    </table>
+                </form>
+            </section>
+        </nav>
+        <br>
+        <a href="MenuProblemas.html">Regresar a Menu</a>
+        <footer>PROBLEMAS DE JAVA SCRIPT</footer>
+    </div>
+</body>
+</html>
