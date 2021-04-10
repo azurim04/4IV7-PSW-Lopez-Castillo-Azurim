@@ -1,3 +1,19 @@
+:root{
+    --v1: #424B54;
+    --v2: #93A8AC;
+    --v3: #FFFFFF;
+    --v4: #E2B4BD;
+    --v5: #9B6A6C;
+}
+
+*{
+    color: black;
+}
+
+html, body{
+    background-color: var(--v2);
+}
+
 .td_up{
     align-items: left;
     justify-content: left;
@@ -15,11 +31,88 @@
     border-width: 2px;
     border-style: solid;
     font-size: 10;
-    color: #5137c7;
     letter-spacing: 3px;
 }
 
-*{
-    background-color: #85deff;
-    color: #5137c7;
+.main-container{
+    border: 4px;
+    border-radius: 10px;
+    margin: 2rem;
 }
+
+nav{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin: 2rem 6rem;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-top: 3rem;
+    border: 2px solid var(--v2);
+    background-color: var(--v1);
+    width: 83%;
+    align-items: center;
+    justify-content: center;
+}
+
+#parrafo{
+    padding: 1rem;
+    background-color: var(--v4);
+    border: 2px solid var(--v4);
+    margin-bottom: 1rem;
+    width: 100%;
+    height: max-content;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#formulario{
+    padding: 2rem;
+    background-color: var(--v4);
+    border: 2px solid var(--v4);
+    width: 100%;
+    height: max-content;
+}
+
+@media (min-width: 800px){
+    nav{
+        padding: 2rem;
+        font-size: 1.2em;
+    }
+}
+
+a{
+    border: none;
+    min-width: 180px;
+    height: 50px;
+    background: var(--v5);
+    color: white;
+    border-radius: 100px;
+    text-decoration: none;
+    display: inline-flex;
+    transition: .3s ease all;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 1rem;
+    margin-bottom: 4.5rem;
+    margin-left: 44%;
+}
+
+footer{
+    background-color: var(--v5);
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+table, td, th{
+    border-collapse: collapse;
+    border-width: 3px;
+    border-color: var(--v1);
+    background-color: var(--v2);
+}
+
