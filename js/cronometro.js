@@ -24,15 +24,14 @@ function init(){
 
 function iniciarContador(){
     if(verificador == false){
-        var intervalo = setInterval(function (){
+            intervalo = setInterval(function(){
             tiempo += 0.01;
             temporizador.innerHTML = tiempo.toFixed(2);
         }, 10);
         verificador = true;
     }else{
-        clearInterval(intervalo);
-        tiempo = 0;
         verificador = false;
+        clearInterval(intervalo);
     }
 }
 
