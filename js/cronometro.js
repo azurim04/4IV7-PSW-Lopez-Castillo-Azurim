@@ -14,6 +14,8 @@ let tiempo = 0;
 let intervalo = 0;
 let verificador = false;
 
+init();
+
 function init(){
     iniciar.addEventListener('click', iniciarContador);
     resetear.addEventListener('click', resetearContador);
@@ -28,8 +30,9 @@ function iniciarContador(){
         }, 10);
         verificador = true;
     }else{
-        verificador = false;
         clearInterval(intervalo);
+        tiempo = 0;
+        verificador = false;
     }
 }
 
